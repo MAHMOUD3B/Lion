@@ -1,2 +1,2 @@
-# Temp-one-with-HTML-CSS
+# Lion design
 new template with HTML &amp; CSS
