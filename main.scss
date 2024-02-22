@@ -1,0 +1,24 @@
+@use "./SASS/header";
+@use "./SASS/landing";
+@use "./SASS/services";
+@use "./SASS/componants/globals";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: {
+        family: "poppins", "Helevitca", san-serf;
+        size: 16px;
+        weight: normal;
+    }
+}
+
+.portfolio {
+    a {
+        width: fit-content;
+    }
+}

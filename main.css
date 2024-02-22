@@ -1,0 +1,66 @@
+.navbar .nav-item .nav-link {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .navbar .nav-item .nav-link {
+    border-bottom: 1px solid gray;
+  }
+  .navbar .nav-item .nav-link:hover {
+    margin-left: 5px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar .nav-item .nav-link:hover {
+    margin-left: 5px !important;
+  }
+}
+
+body .landing {
+  height: calc(100vh - 65px);
+  background-image: url("../Images/img3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services .image::before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 120px;
+  height: calc(100% + 60px);
+  background-color: #212529;
+  z-index: -1;
+}
+
+.main-heading {
+  font-size: 100px;
+  color: #eee;
+  letter-spacing: -5px;
+}
+
+p.main-text {
+  margin-top: -80px;
+  margin-bottom: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", "Helevitca", san-serf;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.portfolio a {
+  width: fit-content;
+}

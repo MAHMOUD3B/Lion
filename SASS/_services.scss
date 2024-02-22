@@ -1,0 +1,14 @@
+.services {
+    .image {
+        &::before {
+            content: '';
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            width: 120px;
+            height: calc(100% + 60px);
+            background-color: #212529;
+            z-index: -1;
+        }
+    }
+}
