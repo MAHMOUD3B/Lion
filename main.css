@@ -1,3 +1,37 @@
+/* Set global rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", "Helevitca", san-serf;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.main-heading {
+  font-size: 100px;
+  color: #eee;
+  letter-spacing: -5px;
+}
+
+p.main-text {
+  margin-top: -80px;
+  margin-bottom: 50px;
+}
+
+.portfolio a {
+  width: fit-content;
+}
+
+/* Styling header of page */
 .navbar .nav-item .nav-link {
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -19,6 +53,7 @@
   }
 }
 
+/* Styling landing section */
 body .landing {
   height: calc(100vh - 65px);
   background-image: url("../Images/img3.webp");
@@ -27,6 +62,7 @@ body .landing {
   background-position: center;
 }
 
+/* Styling services section */
 .services .image::before {
   content: "";
   position: absolute;
@@ -38,29 +74,41 @@ body .landing {
   z-index: -1;
 }
 
-.main-heading {
-  font-size: 100px;
-  color: #eee;
-  letter-spacing: -5px;
+/* Styling about section */
+.about .image {
+  width: 250px;
+  height: 350px;
 }
-
-p.main-text {
-  margin-top: -80px;
-  margin-bottom: 50px;
+.about .image img {
+  position: absolute;
+  z-index: 2;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.about .image::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -40px;
+  width: 100px;
+  height: calc(100% + 40px);
+  background-color: #eee;
+  z-index: 1;
 }
-
-body {
-  font-family: "poppins", "Helevitca", san-serf;
-  font-size: 16px;
-  font-weight: normal;
+.about .image::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 150px;
+  height: calc(100% - 40px);
+  z-index: 1;
+  right: -115px;
+  border-left: 70px solid #0dcaf0;
+  border-bottom: 80px solid #0dcaf0;
 }
-
-.portfolio a {
-  width: fit-content;
+@media (max-width: 767px) {
+  .about .image::before, .about .image::after {
+    display: none;
+  }
+}
+.about hr {
+  height: 2px;
 }

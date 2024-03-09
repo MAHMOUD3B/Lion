@@ -1,0 +1,50 @@
+@use "./helpers/mixins" as *;
+
+/* Styling about section */
+.about {
+    .image {
+        width: 250px;
+        height: 350px;
+
+        img {
+            position: absolute;
+            z-index: 2;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: -40px;
+            width: 100px;
+            height: calc(100% + 40px);
+            background-color: #eee;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -40px;
+            width: 150px;
+            height: calc(100% - 40px);
+            z-index: 1;
+            right: -115px;
+            border-left: 70px solid #0dcaf0;
+            border-bottom: 80px solid #0dcaf0;
+        }
+
+        @include responsive(mobile) {
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+
+    }
+
+    hr {
+        height: 2px;
+    }
+}

@@ -1,3 +1,23 @@
+/* Set global rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: {
+        family: "poppins", "Helevitca", san-serf;
+        size: 16px;
+        weight: normal;
+    }
+}
+
 .main-heading {
     font-size: 100px;
     color: #eee;
@@ -7,4 +27,10 @@
 p.main-text {
     margin-top: -80px;
     margin-bottom: 50px;
+}
+
+.portfolio {
+    a {
+        width: fit-content;
+    }
 }

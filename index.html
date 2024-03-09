@@ -24,24 +24,24 @@
         </button>
         <div class="navbar-collapse collapse" id="links">
           <ul class="navbar-nav nav ms-auto">
-            <li class="nav-item"><a class="nav-link fw-bold fs-5 active" href="">home</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="">about</a></li>
-            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="">contact</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5 active" href="#home">home</a></li>
             <li class="nav-item"><a class="nav-link fw-bold fs-5" href="#services">services</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="#portfolio">portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="#about">about</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold fs-5" href="#contact">contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- end header-->
     <!-- start landing -->
-    <section class="landing  d-flex align-items-center justify-content-center">
+    <section class="landing  d-flex align-items-center justify-content-center" id="home">
       <article class="text text-center w-50">
         <h2 class="text-info fs-1 fw-bold mb-3">Hello there</h2>
         <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
           quam.</p>
       </article>
     </section>
-    <!-- end landing -->
     <!-- start features -->
     <section class="features py-5 bg-light">
       <div class="container">
@@ -82,7 +82,6 @@
         </div>
       </div>
     </section>
-    <!-- end features -->
     <!-- start services -->
     <section class="services py-5" id="services">
       <h2 class="main-heading text-center fw-bold mb-5">services</h2>
@@ -137,9 +136,8 @@
         </div>
       </div>
     </section>
-    <!-- end services -->
     <!-- start portfolio -->
-    <section class="portfolio py-5 bg-light">
+    <section class="portfolio py-5 bg-light" id="portfolio">
       <h2 class="main-heading fw-bold text-center mb-5">portfolio</h2>
       <p class="main-text text-center">if you do it right, it will last forever</p>
       <div class="container">
@@ -187,7 +185,52 @@
         <a class="btn btn-primary my-3 mx-auto d-block" href="">see more</a>
       </div>
     </section>
-    <!-- end portfolio -->
+    <!-- Start about section -->
+    <section class="about py-5" id="about">
+      <h2 class="main-heading fw-bold text-center mb-5">about</h2>
+      <p class="main-text text-center">less is more work</p>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="image col-md-6 col-lg-6 mb-4 mb-md-0 position-relative text-center text-md-start">
+            <img class="img-fluid rounded-2" src="./Images/innovative.jpeg" alt="innovative image">
+          </div>
+          <div class="text col-md-6 col-lg-6 p-2 ps-md-5 text-center text-md-start">
+            <p class="text-dark fw-bold mb-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Autem, magni nam adipisci
+              aliquid minus asperiores porro maxime, similique laborum nulla fugit nisi, totam
+              doloribus dolore quis saepe nostrum accusamus recusandae?</p>
+            <hr class="bg-info">
+            <p class="text-black-50 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Optio, eligendi magni
+              quaerat minima officia aliquid.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start contact section -->
+    <section class="contact py-5 bg-light" id="contact">
+      <h2 class="main-heading fw-bold text-center mb-5">contact</h2>
+      <p class="main-text text-center">we are born to create</p>
+      <div class="container">
+        <div class="contact-info py-4 text-center fs-2 fw-bold">
+          <p class="text-dark">feel free to drop us a line at:</p>
+          <a class="text-info"
+            href="mailto: mbas3491@gmail.com?subject=contact">leonagency@gmail.com</a>
+        </div>
+        <div class="socials text-center mt-4 fs-6">
+          find us on social networks
+          <i class="fab fa-facebook-f ms-3 text-dark"></i>
+          <i class="fab fa-youtube ms-3 text-dark"></i>
+          <i class="fab fa-x-twitter ms-3 text-dark"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Start footer section -->
+    <footer class="p-4 bg-dark text-center fs-4">
+      <p class="text-light">&copy; 2024 created by <span class="text-info fw-bold">70da</span>, all
+        right are reserved</p>
+    </footer>
     <!-- JavaScript Files-->
     <script src="./JS/all.min.js"></script>
     <script src="./JS/bootstrap.bundle.min.js.map"></script>
